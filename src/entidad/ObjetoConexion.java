@@ -18,7 +18,7 @@ public class ObjetoConexion {
     }
     public Connection conectarSQL() {
         try {
-            sql = new Conexion("127.0.0.1","1433","pegaso","sa","Srp007","SQL");
+            sql = new Conexion("127.0.0.1","1433","pegasus","sa","Srp007","SQL");
             boolean estado=sql.conectarBD();
             if(estado){
             System.out.println("CONECTADO CORRECTAMENTE");

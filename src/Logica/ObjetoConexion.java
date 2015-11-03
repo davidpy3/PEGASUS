@@ -17,7 +17,7 @@ public class ObjetoConexion {
     public Connection conexion(){
         try{
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            conet=DriverManager.getConnection("jdbc:sqlserver://192.168.10.10:1433;databaseName=pegasus;integratedSecurity=true");
+            conet=DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=pegasus;user=sa;pass=Srp007;integratedSecurity=true");
            //JOptionPane.showMessageDialog(null,"conectado");
         }catch(Exception e) {
             e.printStackTrace();
